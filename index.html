@@ -3,40 +3,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Byte Moves Technology</title>
+    <link rel="icon" type="image/png" href="logo.png" />
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #0f172a;
             color: #e5e7eb;
         }
         header {
             background: #020617;
-            padding: 20px 40px;
+            padding: 10px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid #1f2937;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-            letter-spacing: 1px;
+        .logo img {
+            height: 50px;
         }
         nav a {
             color: #e5e7eb;
             margin-left: 20px;
             text-decoration: none;
             font-size: 14px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #60a5fa;
         }
         .hero {
-            padding: 80px 40px;
+            padding: 90px 40px;
             text-align: center;
             background: linear-gradient(135deg, #020617, #0f172a);
         }
         .hero h2 {
-            font-size: 40px;
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        .tagline {
+            font-size: 20px;
+            color: #60a5fa;
             margin-bottom: 20px;
+            font-weight: bold;
         }
         .hero p {
             font-size: 18px;
@@ -46,28 +56,39 @@
         }
         .cta {
             display: inline-block;
-            padding: 12px 24px;
+            padding: 12px 28px;
             background: #2563eb;
             color: white;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.5);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.6);
         }
         .section {
             padding: 60px 40px;
             max-width: 1100px;
             margin: auto;
         }
-        .services {
+        .services, .why {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
         .card {
             background: #020617;
-            padding: 20px;
+            padding: 25px;
             border-radius: 12px;
             border: 1px solid #1f2937;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
         }
         footer {
             text-align: center;
@@ -79,40 +100,57 @@
     </style>
 </head>
 <body><header>
-    <h1>Byte Moves Technology</h1>
+    <div class="logo"><img src="logo.png" alt="Byte Moves Technology Logo" /></div>
     <nav>
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
 </header><section class="hero">
-    <h2>Technology Help Without the Headaches</h2>
-    <p>Byte Moves Technology provides practical IT support, technology assistance, and creative media production. Whether you need systems running smoothly or content that stands out, we help you move forward.</p>
-    <a href="#contact" class="cta">Get Help</a>
+    <h2>Move Forward With Technology That Works</h2>
+    <div class="tagline">Smart Solutions. Creative Media. Real-World Results.</div>
+    <p>Byte Moves Technology provides online IT support, technology consulting, and music and video production services for individuals, creators, and businesses everywhere.</p>
+    <a href="#contact" class="cta">Work With Byte Moves</a>
 </section><section id="services" class="section">
     <h2>Services</h2>
     <div class="services">
         <div class="card">
             <h3>IT Support & Tech Help</h3>
-            <p>Troubleshooting, setup, upgrades, and general technology assistance for individuals and small businesses.</p>
+            <p>Remote troubleshooting, setup, upgrades, and general technology assistance wherever you are.</p>
         </div>
         <div class="card">
             <h3>Web & Digital Tools</h3>
-            <p>Simple websites, automation, and tools that help you work smarter and present your business online.</p>
+            <p>Simple websites, automation, and tools that help you work smarter and present yourself online.</p>
         </div>
         <div class="card">
             <h3>Music Production</h3>
-            <p>Audio production, editing, and creative projects for musicians, creators, and personal projects.</p>
+            <p>Audio production, editing, and creative work for musicians, podcasters, and creators.</p>
         </div>
         <div class="card">
             <h3>Video Production</h3>
-            <p>Editing and production services to help create polished, professional-looking video content.</p>
+            <p>Editing and production services to create polished, engaging video content.</p>
+        </div>
+    </div>
+</section><section class="section">
+    <h2>Why Choose Byte Moves?</h2>
+    <div class="why">
+        <div class="card">
+            <h3>Practical Experience</h3>
+            <p>Real-world solutions that work, not just theory or complicated jargon.</p>
+        </div>
+        <div class="card">
+            <h3>Creative + Technical</h3>
+            <p>A rare mix of IT expertise and creative media production in one place.</p>
+        </div>
+        <div class="card">
+            <h3>Personal Service</h3>
+            <p>You work directly with the person solving your problem—not a help desk.</p>
         </div>
     </div>
 </section><section id="about" class="section">
     <h2>About Byte Moves Technology</h2>
     <p>
-        Byte Moves Technology was founded to make technology practical, approachable, and useful in the real world. We focus on helping people solve real problems—whether that means fixing systems, building tools, or creating professional media content.
+        Byte Moves Technology was founded by <strong>Mike Flannery</strong> to make technology practical, approachable, and useful in the real world. The goal is simple: help people solve real problems, create great media, and use technology with confidence.
     </p>
 </section><section id="contact" class="section">
     <h2>Contact</h2>
